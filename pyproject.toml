@@ -1,6 +1,6 @@
 [project]
 name = "pydantic-apply"
-version = "0.9.0"
+version = "0.9.1"
 description = "Apply changes as patches to pydantic models."
 authors = [{ name = "David Danier", email = "david.danier@gmail.com" }, { name = "TEAM23 GmbH", email = "info@team23.de" }]
 license = "MIT"
