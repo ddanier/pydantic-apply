@@ -45,7 +45,7 @@ class ApplyModelMixin(pydantic.BaseModel):
             if field_annotation is None:
                 raise RuntimeError("model field has not typing annotation")
 
-            if is_pydantic_apply_annotation(field_annotation):
+            if is_pydantic_apply_annotation(field_annotation):  # pyright: ignore[reportArgumentType]
                 current_value = getattr(self, field_name)
                 if (
                     # ...AND current attribute value must be a instance
